@@ -15,11 +15,6 @@
             <username>${env.nexus_username}</username>
             <password>${env.nexus_password}</password>
         </server>
-        <server>
-            <id>maven-central</id>
-            <username>${env.nexus_username}</username>
-            <password>${env.nexus_password}</password>
-        </server>
     </servers>
     <mirrors>
         <mirror>
