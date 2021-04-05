@@ -1,0 +1,14 @@
+<settings>
+    <servers>
+        <server>
+            <id>maven-snapshots</id>
+            <username>${env.nexus_username}</username>
+            <password>${env.nexus_password}</password>
+        </server>
+        <server>
+            <id>maven-releases</id>
+            <username>${env.nexus_username}</username>
+            <password>${env.nexus_password}</password>
+        </server>
+    </servers>
+</settings>

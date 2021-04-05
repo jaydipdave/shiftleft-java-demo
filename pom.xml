@@ -10,6 +10,33 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.1.RELEASE</version>
     </parent>
+
+    <repositories>
+        <repository>
+            <id>maven-snapshots</id>
+            <name>maven-snapshots</name>
+            <url>http://nexus:8081/repository/maven-snapshots/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>maven-releases</id>
+            <name>maven-releases</name>
+            <url>http://nexus:8081/repository/maven-releases/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
     		<groupId>commons-io</groupId>
